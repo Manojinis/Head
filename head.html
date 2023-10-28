@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Your Namee - Portfolio</title>
+ <style>
+  body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #8ab63a;
+  }
+  
+  header {
+   background-color: #329770;
+   color: #131212;
+   text-align: center;
+   padding: 2rem 0;
+   position: relative;
+  }
+  
+  .header-content h1 {
+   font-size: 2.5rem;
+  }
+  
+  .profile-picture {
+   width: 100px;
+   height: 100px;s
+   border-radius: 75%; 
+   border-radius: 75%;
+   object-fit: cover;
+   position: absolute;
+   top: 75px;
+   left: 75px;
+  }
+  
+  nav {
+   background-color: #0e41a0;
+   color: #a78d1d;
+   text-align: center;
+  }
+
+   nav:hover {
+   background-color: #ce1a1a;
+  }
+  
+  
+  nav u1 {
+   list-style-type: none;
+   padding: 0;
+  }
+  
+  nav ul li {
+   display: inline;
+   margin: 0 20px;
+  }
+  
+  nav ul li a {
+   text-decoration: none;
+   color: #18af5c;
+  }
+  
+  .section-content {
+   background-color: #203d5f;
+   padding: 2rem;
+   margin: 1rem;
+   border-radius: 20px;
+   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .download-button {
+   background-color: #333;
+   color: #fff;
+   padding: 0.5rem 1rem;
+   text-decoration: none;
+   border-radius: 20px;
+   display: inline-block;
+   margin-top: 10px;
+  }
+  
+  .download-button:hover {
+   background-color: #2e9415;
+  }
+  
+  footer {
+   text-align: center;
+   padding: 1rem 0;
+   background-color: #af3333;
+   color: #fff;
+  }
+  
+  ul {
+   list-style-type: disc;
+   padding-left: 20px;
+  }
+ </style>
+</head>
+<body>
+ <header>
+  <div class="header-content">
+   <img src="manojini.jpg" alt="Your Profile Picture" class="profile-picture">
+   <h1>MANOJINI</h1>
+   <p>Web Developer</p>
+  </div>
+ </header>
+ 
+ <nav>
+  <ul>
+   <li><a href="#about">About</a></li> 
+   <li><a href="#education">Education</a></li>     
+   <li><a href="#skills">Skills</a></li>     
+   <li><a href="#contact">Contact</a></li>     
+  </ul>
+ </nav>
+ 
+ <section id="about">
+  <div class="section-content">
+   <h2>About Me</h2>
+   <p>Hello Everyone! This is MANOJINI S
+        
+    <br> I am a Computer Science student.</p>
+  </div>
+ </section>
+ 
+ <section id="education">
+  <div class="section-content">
+   <h2>Bsc Computer Science</h2>
+   <p><h3>Manonmaniam Sundaranar University</h3></p>
+            <table border="5">
+                <tr>
+                    <h2><th>DEGREE</th>
+                    <th>COLLEGE</th>
+                    <th>DEPARTMENT</th></h2>
+                </tr>
+                <tr>
+                    <h2><td>SSLC</td>
+                    <td><center>Balakrishna Matric hr sec school</td>
+                    <td>NA</td></h2>
+                </tr>
+                <tr>
+                    <h2><td>HSC</td>
+                    <td><center>Balakrishna Matric hr sec school</td>
+                    <td>Computer Science</td></h2>
+                </tr>
+                <tr>
+                    <h2><td>Bsc</td>
+                    <td><center>S.A.V Sahaya Thai Arts and Science(Women) College</td>
+                    <td>Computer Science</td></h2>
+                </tr>
+            </table>
+  </div>
+ </section>
+ 
+ 
+ <section id="skills">
+    <div class="section-content">
+     <h2>Skills</h2>
+     <ul>
+      <li>C</li>
+      <li>C++</li>
+      <li>Java</li>
+      <li>Python</li>
+      <li>HTML,CSS</li> 
+      <li>SQL</li>
+     </ul>
+    </div>
+   </section>
+ 
+   <section id="contact">
+    <div class="section-content">
+        <h2>Contact</h2>
+        <ul>
+            <li>Email: manojini108@gmail.com</li>
+            <li>Mobile: 8973571348</li>
+            <li>Address:4/9/13Om sakthi street MarungoorKumarapuram Thoppur</li>
+            <li>District:Kanyakumari</li>
+            <li>Pincode:629402</li>
+            </ul>
+    </div>
+</section>
+ 
+ <section id="resume">
+  <center>
+   <div class="section-content">
+    <h2>About Me</h2>
+    <a href="manojini.pdf" class="download-button">Download CV</a>
+   </div>
+  </center>
+ </section>
+ 
+ <footer>
+  <p>&copy; 2023 manojini</p>
+ </footer>
+ 
+ <script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor=> {
+   anchor.addEventListener('click',function(e) {
+    e.preventDefault();
+    
+    const targetId=this.getAttribute('href').substring(1);
+    const targetElement=document.getElementById(targetId);
+    
+    if(targetElement) {
+     window.scrollTo({
+      top: targetElement.offsetTop,
+      behavior: 'smooth'
+     });
+    }
+   });
+  });
+ </script>
+</body> 
+</html>
